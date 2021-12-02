@@ -1,0 +1,32 @@
+ADMIN(username:ADMIN password:ADMIN)
+OWNER(username:MODERATOR password:MODERATOR)
+USER(username:null password:null)
+
+USER
+
+GET http://localhost:8080/lab9_war_exploded/user/allUsers
+GET http://localhost:8080/lab9_war_exploded/user/getUser/1
+POST http://localhost:8080/lab9_war_exploded/user/addUser
+PUT http://localhost:8080/lab9_war_exploded/user/editUser
+DELETE http://localhost:8080/lab9_war_exploded/user/deleteUser/1
+PUT http://localhost:8080/lab9_war_exploded/user/addToFavorite/1-1
+DELETE http://localhost:8080/lab9_war_exploded/user/removeFromFavorite/1-1
+
+ARTICLE
+
+GET http://localhost:8080/lab9_war_exploded/article/allArticles
+GET http://localhost:8080/lab9_war_exploded/article/getArticle/1
+GET http://localhost:8080/lab9_war_exploded/article/getArticles/{theme}
+POST http://localhost:8080/lab9_war_exploded/article/addArticle
+PUT http://localhost:8080/lab9_war_exploded/article/editArticle
+DELETE http://localhost:8080/lab9_war_exploded/article/deleteArticle/1
+PUT http://localhost:8080/lab9_war_exploded/article/like/1-1
+DELETE http://localhost:8080/lab9_war_exploded/article/unlike/1-1
+
+COMMENT
+
+GET http://localhost:8080/lab9_war_exploded/comment/allComments
+GET http://localhost:8080/lab9_war_exploded/comment/getComment/1
+POST http://localhost:8080/lab9_war_exploded/comment/addComment
+PUT http://localhost:8080/lab9_war_exploded/comment/editComment
+DELETE http://localhost:8080/lab9_war_exploded/comment/deleteComment/1

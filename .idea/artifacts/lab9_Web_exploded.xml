@@ -1,0 +1,20 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="lab9:Web exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/lab9_Web_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="lab9/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="javaee-facet-classes" facet="lab9/web/Web" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: com.h2database:h2:1.4.200" />
+          <element id="library" level="project" name="Maven: javax.activation:activation:1.1" />
+          <element id="library" level="project" name="Maven: javax:javaee-api:7.0" />
+          <element id="library" level="project" name="Maven: com.sun.mail:javax.mail:1.5.0" />
+          <element id="library" level="project" name="Maven: org.projectlombok:lombok:1.18.22" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
